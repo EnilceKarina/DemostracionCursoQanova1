@@ -19,5 +19,20 @@ public class Logeo {
         login.ingresarClave(clave);
         login.clickBtnIngresar();
         cargaInformacion.recuperarTitulo();
+        //Completa datos en los input
+        cargaInformacion.rellenarCampoTexto("Testeo CAFB");
+        cargaInformacion.rellenarCampoMail("prueba@testeo.cl");
+        cargaInformacion.rellenarCampoAreaTexto("Prueba de testeo automatizacion Java con Selenium.");
+        cargaInformacion.rellenarCampoFecha("12/10/2023");
+        // elije de una combo de datos
+        cargaInformacion.rellenarCampoLista("valor 3");
+        // elije de una de la seleccion multiple
+        //cargaInformacion.seleccionMultiple(2);
+        // elije de multiples seleccion
+        cargaInformacion.seleccionMultiple2("2,3");
+        // elije de  seleccion de radio buton
+        cargaInformacion.comboRadio(1);
+        // Hacer Click en boton enviar
+        cargaInformacion.clickBtnEnviar();
     }
 }
